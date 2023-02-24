@@ -1,1 +1,108 @@
-/* Monte sua estilização aqui */
+.header__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.header__container > img {
+    width: 7.8rem;
+    margin-bottom: 1rem;
+}
+
+.forms__container{
+    display: flex;
+    gap: 1rem;
+}
+
+.input__text {
+    width: 11rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border: 2px solid var(--grey-7);
+    padding-left: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grey-5);
+    background-color: var(--grey-7);
+    outline: none;
+}
+
+.btn__search{
+    width: 4rem;
+    height: 3.2rem;
+    border-radius: 0.5rem;
+    background-color: var(--blue-5);
+    border: none;
+}
+
+.main__container{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.main__container > h1 {
+    color: var(--grey-2);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.list__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.list__card {
+    width: 17rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0.5rem;
+    background-color: var(--grey-7);
+    border-radius: 0.5rem;
+}
+
+.list__card > img {
+    width: 3.7rem;
+}
+
+.list__card > span {
+    font-size: 1.25rem;
+    color: var(--grey-4);
+    margin-left: 1rem;
+}
+
+
+@media (min-width: 1024px) {
+   .header__container{
+    flex-direction: row;
+    justify-content: space-around;
+   }
+
+   .input__text{
+    width: 14rem;
+   }
+
+   .main__container{
+    margin-top: 2rem;
+   }
+
+   .list__container{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 3rem;
+    width: 65%;
+   }
+
+   .list__card{
+    width: 100%;
+   }
+}
